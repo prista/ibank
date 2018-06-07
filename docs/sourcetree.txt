@@ -1,0 +1,4 @@
+git config --global --unset credential.helper
+and remove passwd file
+options-authentication-remove lines with pass
+master change

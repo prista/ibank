@@ -1,0 +1,9 @@
+slf4j --> log4j
+
+eclipse: windows => preferences => compiler --> user Java 8
+
+1) session and cookies
+2) ear
+3) libs in war
+4) templates
+5) bean in xml

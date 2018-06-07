@@ -1,0 +1,16 @@
+<?xml version="1.0"  encoding="ISO-8859-1"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+    <New id="jndiDatasource" class="org.eclipse.jetty.plus.jndi.Resource">
+        <Arg></Arg>
+        <Arg>jdbc/project-datasource</Arg>
+        <Arg>
+            <New class="org.apache.commons.dbcp.BasicDataSource">
+                <Set name="username">postgres</Set>
+                <Set name="password">postgres</Set>
+                <Set name="url">jdbc:postgresql://localhost:5000/ibank</Set>
+            </New>
+        </Arg>
+    </New>
+</Configure>
+

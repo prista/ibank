@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="index" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+
+	<definition name="bank.list" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/bank/list.jsp" />
+	</definition>
+
+	<definition name="bank.edit" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/bank/form.jsp" />
+	</definition>
+
+    <definition name="branch.list" extends="DefaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/branch/list.jsp"/>
+    </definition>
+
+    <definition name="branch.edit" extends="DefaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/branch/form.jsp"/>
+    </definition>
+
+	<definition name="userprofile.list" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/userprofile/list.jsp"/>
+	</definition>
+
+	<definition name="userprofile.edit" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/userprofile/form.jsp"/>
+	</definition>
+
+    <definition name="account.list" extends="DefaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/account/list.jsp"/>
+    </definition>
+
+    <definition name="account.edit" extends="DefaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/account/form.jsp"/>
+    </definition>
+
+	<definition name="transaction.list" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/transaction/list.jsp"/>
+	</definition>
+
+	<definition name="transaction.edit" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/transaction/form.jsp"/>
+	</definition>
+
+	<definition name="payment-type.list" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/payment-type/list.jsp"/>
+	</definition>
+
+	<definition name="payment-type.edit" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/payment-type/form.jsp"/>
+	</definition>
+
+	<definition name="ajax-samples" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/ajax/content.jsp"/>
+	</definition>
+
+	<definition name="login" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp"/>
+	</definition>
+	
+</tiles-definitions>

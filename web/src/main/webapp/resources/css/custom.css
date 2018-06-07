@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.input-field label.multiselect-label, .input-field label.switch-label {
+    position: absolute;
+    top: -26px;
+    font-size: .8rem;
+}
+
+.switch label input[type=checkbox]:checked ~ .lever {
+    background-color: #84c7c1;
+}
+
+.switch label input[type=checkbox]:checked ~ .lever:before, .switch label input[type=checkbox]:checked
+~ .lever:after {
+    left: 18px;
+}
+
+.switch label input[type=checkbox]:checked ~ .lever:after {
+    background-color: #26a69a;
+}
+
+.switch label input[type=checkbox]:checked ~ .lever:before, .switch label input[type=checkbox]:checked
+~ .lever:after {
+    left: 18px;
+}

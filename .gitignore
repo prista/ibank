@@ -1,0 +1,15 @@
+.settings/
+dao-api/.classpath
+dao-api/.project
+.project
+.idea
+dao-jdbc-impl/.classpath
+dao-orm-impl/.classpath
+service/.classpath
+web/.classpath
+*.iml
+.metadata/
+service/logs/app.log
+web/logs/app.log
+dao-orm-impl/.project
+service/logs/

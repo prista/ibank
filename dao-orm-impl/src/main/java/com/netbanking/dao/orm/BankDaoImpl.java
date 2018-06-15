@@ -6,7 +6,6 @@ import com.prista.netbanking.dao.api.IBankDao;
 import com.prista.netbanking.dao.api.filter.BankFilter;
 import com.prista.netbanking.dao.api.model.IBank;
 import org.apache.commons.lang3.StringUtils;
-import org.hibernate.jpa.criteria.OrderImpl;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -71,7 +70,7 @@ public class BankDaoImpl extends AbstractDaoImpl<IBank, Integer> implements IBan
         if (filter.getSortColumn() != null) {
             final SingularAttribute<? super Bank, ?> sortProperty = toMetamodelFormat(filter.getSortColumn());
             final Path<?> expression = from.get(sortProperty);
-            cq.orderBy(new OrderImpl(expression, filter.getSortOrder()));
+            cq.orderBy(filter.getSortOrder() ? cb.asc(expression) : cb.desc(expression));
         }
 
         final TypedQuery<IBank> q = em.createQuery(cq);
